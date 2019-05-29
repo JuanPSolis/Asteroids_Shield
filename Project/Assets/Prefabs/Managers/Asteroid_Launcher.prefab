@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1952837255328656}
+  m_IsPrefabAsset: 1
+--- !u!1 &1952837255328656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4084757837053972}
+  - component: {fileID: 114630151866592254}
+  m_Layer: 0
+  m_Name: Asteroid_Launcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4084757837053972
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952837255328656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22060123, y: 1.3433331, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114630151866592254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952837255328656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cc074e85aacf14fb1ef050917c2a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Asteroids:
+  - {fileID: 1439104505659400, guid: 0cc732e47e5629e4c94ce5d8ba03e2aa, type: 2}
+  - {fileID: 1447282715745702, guid: 6b1463159784b124e9654d8cb9f064d6, type: 2}
+  - {fileID: 1240319665518772, guid: eb42043239f1fc04888883438e679e7a, type: 2}
+  PowerUps:
+  - {fileID: 1533682523797148, guid: 9a6078b2df7a56e4985268f0a5b9134a, type: 2}
+  - {fileID: 1193306550537722, guid: bb36e9e47b01e2d41a6cfa6347ddfcb4, type: 2}
+  - {fileID: 1658639937499686, guid: 097e038eda1c33f45943a1dced118fb3, type: 2}
+  Invoke_Asteroid_Time: 3
+  Faster_Invoke_Asteroid_Time: 1
+  Invoke_PowerUp_MinTime: 10
+  Invoke_PowerUp_MaxTime: 50
+  Distance_To_Ship: 7
+  Easy_Level_Finis_Time: 60
+  Hard_Level_Start_Time: 180
+  easy_Level: 0
+  medium_Level: 0
+  hard_Level: 0
